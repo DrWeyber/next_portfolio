@@ -1,0 +1,257 @@
+@import "src/styles/variables.scss";
+@import "src/styles/common.scss";
+
+.team {
+  display: block;
+  margin-bottom: 65px;
+
+  .slogan {
+    max-width: 700px;
+    margin: 30px 0 70px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-rows: 1fr; /* 2 rows */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
+    column-gap: 24px;
+    row-gap: 40px;
+  }
+
+  .card {
+    position: relative;
+    height: 435px;
+    overflow: hidden;
+    border-radius: 16px;
+    color: var(--team-description-color);
+
+    .responsive-image {
+      height: 100%;
+      padding-bottom: 0;
+
+      .div {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &.no-photo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    &.members {
+      background-color: var(--secondary-background);
+      color: var(--team-members-card);
+      font-weight: 600;
+
+      p {
+        font-size: 72px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+      }
+
+      span {
+        font-size: 24px;
+      }
+    }
+
+    .backdrop-filter {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      backdrop-filter: grayscale(100%);
+      pointer-events: none;
+    }
+
+    .card-description {
+      position: absolute;
+      max-width: 87%;
+      padding: 18px 18px 14px;
+      box-sizing: border-box;
+      letter-spacing: -0.4px;
+      background-color: var(--team-description-bg);
+      bottom: 0;
+      left: 0;
+      border-radius: 0 16px 0 0;
+
+      span {
+        display: block;
+      }
+
+      .name {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 6px;
+      }
+
+      .job-title {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .join-us {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: var(--base-font-color);
+
+    p {
+      max-width: 250px;
+      margin: 0 0 18px;
+    }
+
+    .button {
+      background-color: var(--secondary-background);
+      color: var(--team-members-card);
+      font-size: 20px;
+      border: 0;
+
+      &:hover {
+        background-color: var(--secondary-background-hover);
+      }
+
+      span {
+        background-color: var(--dark-background);
+        margin-left: 3vw;
+
+        &:after {
+          border-color: var(--light-background-color);
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: $xl-screen) {
+    .card {
+      height: 390px;
+    }
+
+    .card .card-description {
+      padding: 9px;
+
+      .name {
+        font-size: 18px;
+      }
+
+      .job-title {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: $l-screen) {
+    .card {
+      height: 350px;
+    }
+
+    .card .card-description {
+      padding: 9px;
+
+      .name {
+        font-size: 16px;
+      }
+
+      .job-title {
+        font-size: 14px;
+      }
+    }
+
+    .join-us .button {
+      padding: 10px;
+      font-size: 16px;
+
+      span {
+        background-color: var(--base-font-color);
+
+        &::after {
+          border-color: var(--light-background-color);
+          border-width: 2px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $m-screen) {
+    .title-container .category-title {
+      font-size: 14px;
+      letter-spacing: unset;
+    }
+
+    .slogan {
+      font-size: 40px;
+      line-height: 44px;
+      margin-bottom: 40px;
+    }
+
+    .card-container {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+      height: 435px;
+    }
+
+    .card .card-description {
+      padding: 16px;
+
+      .name {
+        font-size: 20px;
+      }
+
+      .job-title {
+        font-size: 16px;
+      }
+    }
+
+    .join-us .button {
+      padding: 15px 20px;
+    }
+  }
+
+  @media (max-width: $s-screen) {
+    .slogan {
+      font-size: 24px;
+      line-height: 26px;
+    }
+
+    .card {
+      height: 320px;
+    }
+
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+
+    .card .card-description {
+      padding: 10px;
+
+      .name {
+        font-size: 16px;
+      }
+
+      .job-title {
+        font-size: 14px;
+      }
+    }
+
+    .join-us {
+      width: 320px;
+      height: 320px;
+      margin: 0 auto;
+      border: 1px solid var(--section-title-border);
+      border-radius: 50%;
+    }
+  }
+}
+
+

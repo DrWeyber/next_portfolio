@@ -1,0 +1,51 @@
+@import "src/styles/variables.scss";
+@import "src/styles/common.scss";
+
+.language-label {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 42%;
+    right: 8px;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid var(--base-font-color);
+    border-right: 1px solid var(--base-font-color);
+    transform: rotate(135deg) translateY(50%);
+  }
+
+  @media (max-width: $m-screen) {
+    display: none;
+  }
+}
+
+.language-switcher {
+  border: 1px solid var(--section-title-border);
+  border-radius: 5px;
+  background: transparent;
+  appearance: none;
+  margin-left: 10px;
+  padding: 14px 24px 14px 8px;
+  cursor: pointer;
+
+  @media (max-width: $xl-screen) {
+    padding: 13px 24px 13px 8px;
+  }
+
+  @media (max-width: $l-screen) {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.language-switcher-option {
+  color: black;
+}
+
+.language-title {
+  visibility: hidden;
+  position: absolute;
+}

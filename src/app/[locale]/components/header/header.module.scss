@@ -1,0 +1,135 @@
+@import "src/styles/variables.scss";
+@import "src/styles/common.scss";
+
+.header-main {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  padding: 25px $xl-x-padding-container;
+  max-width: $max-width-container;
+  font-size: 16px;
+  transition: height 0.2s;
+  height: $header-height;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    font-size: 20px;
+    color: var(--base-font-color);
+
+    img {
+      height: auto;
+      width: 27px;
+      margin-right: 7px;
+    }
+  }
+
+  .header-navbar > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  .header-nav-link {
+    display: block;
+    text-align: center;
+    color: var(--base-font-color);
+    padding: 0 18px;
+    transition: 0.2s color;
+
+    &:hover {
+      color: var(--dark-background-hover)
+    }
+  }
+
+  .contact-us {
+    margin-left: 24px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: $xl-screen) {
+    padding: 0 $l-x-padding-container;
+    font-size: 14px;
+
+    .logo {
+      font-size: 18px;
+    }
+
+    .header-nav-link {
+      padding: 0 10px;
+    }
+
+    .contact-us {
+      padding: 13px 15px;
+    }
+  }
+
+  @media (max-width: $l-screen) {
+    .logo {
+      font-size: 15px;
+
+      img {
+        width: 20px;
+      }
+    }
+
+    .header-nav-link {
+      padding: 0 6px;
+      font-size: 13px;
+    }
+
+    .contact-us {
+      padding: 10px 14px;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .header-nav-link {
+      font-size: 11px;
+    }
+  }
+
+  @media (max-width: $m-screen) {
+    height: $m-header-height;
+    padding: 0 $m-x-padding-container;
+    flex-wrap: wrap;
+
+    .header-navbar {
+      display: none
+    }
+
+    .contact-us {
+      display: none;
+    }
+
+    .logo {
+      font-size: 20px;
+
+      img {
+        width: 26px;
+      }
+    }
+  }
+
+  @media (max-width: $s-screen) {
+    padding: 0 $s-x-padding-container;
+
+    .logo {
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+.separator {
+  width: 100vw;
+  height: 1px;
+  background: var(--section-title-border);
+}

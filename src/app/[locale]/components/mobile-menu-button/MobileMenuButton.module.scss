@@ -1,0 +1,19 @@
+@import "src/styles/variables.scss";
+@import "src/styles/common.scss";
+
+.menu {
+  display: none;
+  padding: 10px 10px;
+  margin-left: 10px;
+  font-size: 14px;
+
+  @media (max-width: $m-screen) {
+      display: block;
+  }
+
+  @media (max-width: $s-screen) {
+
+  }
+
+}
+

@@ -1,0 +1,70 @@
+{
+  "navigation": {
+    "about-us": "About us",
+    "products": "Products",
+    "community": "Community",
+    "useful-materials": "Useful materials",
+    "team": "Team",
+    "testimonials": "Feedbacks",
+    "contacts": "Contacts"
+  },
+  "header": {
+    "contact_us": "Contact us"
+  },
+  "intro": {
+    "heading": "Heading placeholder",
+    "slogan": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lectus quis interdum facilisis. Praesent accumsan hendrerit justo non interdum. Integer a ante ut sapien efficitur euismod. Nulla facilisi. Mauris vel accumsan metus. Sed ultricies nunc urna, suscipit posuere leo hendrerit vel. "
+  },
+  "about-us": {
+    "label": "About us",
+    "title-1": "Title placeholder",
+    "text-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lectus quis interdum facilisis. Praesent accumsan hendrerit justo non interdum. Integer a ante ut sapien efficitur euismod. Nulla facilisi. Mauris vel accumsan metus. Sed ultricies nunc urna, suscipit posuere leo hendrerit vel. ",
+    "title-2": "Title placeholder",
+    "text-2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lectus quis interdum facilisis. Praesent accumsan hendrerit justo non interdum. Integer a ante ut sapien efficitur euismod. Nulla facilisi. Mauris vel accumsan metus. Sed ultricies nunc urna, suscipit posuere leo hendrerit vel.",
+    "title-3": "Title placeholder",
+    "text-3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lectus quis interdum facilisis. Praesent accumsan hendrerit justo non interdum. Integer a ante ut sapien efficitur euismod. Nulla facilisi. Mauris vel accumsan metus. Sed ultricies nunc urna, suscipit posuere leo hendrerit vel. ",
+    "title-4": "Title placeholder",
+    "text-4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper lectus quis interdum facilisis. Praesent accumsan hendrerit justo non interdum. Integer a ante ut sapien efficitur euismod. Nulla facilisi. Mauris vel accumsan metus. Sed ultricies nunc urna, suscipit posuere leo hendrerit vel. ",
+    "show-more": "Show more",
+    "show-less": "Hide"
+  },
+  "common": {
+    "messages": {
+      "sent": "Message was sent"
+    },
+    "contact-us": "Contact us",
+    "show-more": "Show more",
+    "be_a_part": "Join us"
+  },
+  "products": {
+    "product_section": "Products",
+    "be_a_part": "Slogan placeholder"
+  },
+  "community": {
+    "main": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac eleifend magna. Nulla rhoncus at nibh ac ornare. Mauris ac quam vehicula, consequat magna ac, egestas purus. Fusce malesuada nisl in odio sagittis, eu euismod ex ultrices."
+  },
+  "team": {
+    "team": "Team",
+    "team_warning": "Our team",
+    "team_members": {
+      "founder": "Name",
+      "trader": "Name1",
+      "ceo": "Name2"
+    },
+    "to_success": "Slogan"
+  },
+  "testimonials": {
+    "testimonials": "Feedbacks",
+    "our_testimonials": "Our feedbacks"
+  },
+  "contacts": {
+    "title": "Contact us",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Cell phone number",
+      "comment": "Description",
+      "submit": "Send request"
+    }
+  }
+}

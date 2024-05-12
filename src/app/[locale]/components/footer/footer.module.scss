@@ -1,0 +1,76 @@
+@import "src/styles/common";
+@import "src/styles/variables";
+
+.footer {
+  margin-top: 55px;
+  white-space: nowrap;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0 -30px;
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    li:first-child {
+      margin-right: auto;
+    }
+
+    a {
+      display: inline-block;
+      color: var(--base-font-color);
+    }
+
+    li {
+      > * {
+        padding: 0 30px;
+      }
+    }
+  }
+
+  @media (max-width: $xl-screen) {
+    padding-left: $l-x-padding-container;
+    padding-right: $l-x-padding-container;
+
+    ul {
+      margin: 0 -15px;
+    }
+
+    ul li > * {
+      padding: 0 15px;
+    }
+  }
+
+  @media (max-width: $l-screen) {
+
+    font-size: 16px;
+  }
+
+  @media (max-width: $m-screen) {
+    padding-left: $m-x-padding-container;
+    padding-right: $m-x-padding-container;
+  }
+
+
+  @media (max-width: $s-screen) {
+    padding-left: $s-x-padding-container;
+    padding-right: $s-x-padding-container;
+
+    ul {
+      margin-bottom: 0;
+
+      li {
+        margin-bottom: 15px
+      }
+    }
+
+    .designer {
+      order: 1
+    }
+  }
+}

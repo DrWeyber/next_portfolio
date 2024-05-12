@@ -1,0 +1,27 @@
+@import "src/styles/variables";
+
+.outer-container {
+  position: relative;
+  max-width: $max-width-container;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $xl-x-padding-container;
+}
+
+@media (max-width: $xl-screen) {
+  .outer-container {
+    padding: 0 $l-x-padding-container;
+  }
+}
+
+@media (max-width: $m-screen) {
+  .outer-container {
+    padding: 0 $m-x-padding-container;
+  }
+}
+
+@media (max-width: $s-screen) {
+  .outer-container {
+    padding: 0 $s-x-padding-container;
+  }
+}

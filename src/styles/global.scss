@@ -1,0 +1,16 @@
+@import "variables";
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--light-background-color);
+  color: var(--base-font-color);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+  transition: all 0.2s;
+}

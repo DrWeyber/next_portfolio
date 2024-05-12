@@ -1,0 +1,110 @@
+@import "src/styles/variables.scss";
+@import "src/styles/common.scss";
+
+.community {
+  position: relative;
+  margin-top: 12%;
+  padding: 13px 57px 58px;
+  background-image: url("/images/community-bg.png");
+  background-size: cover;
+  border: 1px solid var(--section-title-border);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  p {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -1.3px;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .button {
+    position: relative;
+    margin-left: auto;
+    margin-right: 56px;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+
+    span {
+      margin-left: 30px;
+    }
+  }
+
+  .backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--community-bg-backdrop);
+  }
+
+  @media (max-width: $xl-screen) {
+    p {
+      font-size: 50px;
+    }
+  }
+
+  @media (max-width: $l-screen) {
+    p {
+      font-size: 40px;
+    }
+  }
+
+
+  @media (max-width: $m-screen) {
+    padding-left: 36px;
+    padding-right: 36px;
+
+    p {
+      font-size: 35px;
+      line-height: 40px;
+    }
+
+    .button {
+      margin-right: 0;
+    }
+
+  }
+
+  @media (max-width: 570px) {
+    padding: 13px 20px 20px;
+
+
+    p {
+      font-size: 27px;
+      line-height: 36px;
+    }
+
+    .button {
+      width: 100%;
+      font-size: 17px;
+
+      span {
+        margin-left: auto;
+        width: 26px;
+        height: 26px;
+
+        &::after {
+          left: 30%;
+          width: 7px;
+          height: 7px;
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: $s-screen) {
+    p {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}
+
+

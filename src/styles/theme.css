@@ -1,0 +1,60 @@
+:root {
+  --light-background-color: #FAFAFA;
+  --dark-background: #272E35;
+  --dark-background-hover: #1D232A;
+  --secondary-background: #FFD000;
+  --secondary-background-hover: #EEC200;
+
+  --base-font-color: #272E35;
+  --base-font-color-hover: #1D232A;
+  --secondary-font-color: #FAFAFA;
+
+  --button-background-light: #272E35;
+
+  --section-title-border: #E2E2E2;
+
+  --community-bg-backdrop: #F6F6F65C;
+
+  --team-members-card: #000000;
+  --team-description-bg: #EAEAEA;
+  --team-description-color: #272E35;
+
+  --materials-card-bg: #F6F6F6;
+
+  --testimonials-gradient: linear-gradient(180deg, #FAFAFA 0%, rgba(250, 250, 250, 0) 100%);
+  --testimonials-secondary-color: #9B9FA4;
+
+  --contact-input-bg: #FAFAFA
+
+}
+
+
+:root[data-theme=dark] {
+  --light-background-color: #000000;
+  --dark-background: #FAFAFA;
+  --dark-background-hover: #d1d1d1;
+  --secondary-background: #FFD000;
+  --secondary-background-hover: #e6bb00;
+
+  --base-font-color: #FAFAFA;
+  --base-font-color-hover: #f1f1f1;;
+  --secondary-font-color: #000000;
+
+  --button-background-light: #FAFAFA;
+
+  --section-title-border: #333333;
+
+  --community-bg-backdrop: rgba(12, 12, 13, 0.62);
+
+  --team-members-card: #000000;
+  --team-description-bg: #EAEAEA;
+  --team-description-color: #272E35;
+
+  --materials-card-bg: #0C0C0D;
+
+  --testimonials-gradient: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  --testimonials-secondary-color: #9B9FA4;
+
+  --contact-input-bg: #000
+
+}

@@ -1,0 +1,165 @@
+@import "src/styles/variables.scss";
+@import "src/styles/common.scss";
+
+.about-us {
+  position: relative;
+  z-index: 4;
+  background: var(--light-background-color);
+  padding-top: 8%;
+  margin: 0 (-$xl-x-padding-container);
+  padding-left: $xl-x-padding-container;
+  padding-right: $xl-x-padding-container;
+
+  .category-title {
+    margin-top: 0;
+  }
+
+  .title-container {
+    min-width: 18vw;
+  }
+
+  .text-container {
+    overflow: hidden;
+    position: relative;
+    font-weight: 500;
+    color: var(--base-font-color);
+    flex-grow: 1;
+
+  }
+
+  .hidden-text {
+    max-height: 0;
+
+    &.expanded {
+      max-height: 100%;
+    }
+  }
+
+  .text-section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--section-title-border);
+    margin-bottom: 30px;
+
+    .title {
+      margin: 0;
+      padding: 0 10px;
+    }
+
+    .article {
+      max-width: 70%;
+      margin: 0;
+      padding: 0 10px;
+      width: 100%;
+      text-align: justify;
+    }
+  }
+
+  .show-more {
+    margin-top: 30px;
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--base-font-color);
+    cursor: pointer;
+    position: relative;
+    max-width: fit-content;
+
+    &.expanded {
+      &:after {
+        transform: rotate(-45deg) translateY(50%);
+      }
+
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      margin-top: -3px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 6px;
+      height: 6px;
+      border-top: 1px solid var(--base-font-color);
+      border-right: 1px solid var(--base-font-color);
+      transform: rotate(135deg) translateY(50%);
+    }
+  }
+
+  .text-main {
+    font-size: 24px;
+    margin: 22px 0 48px;
+    letter-spacing: -0.5px;
+    line-height: 38px;
+  }
+
+  .text-secondary {
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $l-screen) {
+    .text-main {
+      font-size: 20px;
+    }
+
+    .text-secondary {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: $m-screen) {
+    flex-wrap: wrap;
+    margin: 0 -$xl-x-padding-container;
+    padding-left: $xl-x-padding-container;
+    padding-right: $xl-x-padding-container;
+
+    .title-container {
+      min-width: unset;
+    }
+
+    .text-main {
+      font-size: 24px;
+    }
+
+    .text-secondary {
+      font-size: 20px;
+    }
+
+    .text-container {
+      margin-top: 20px;
+    }
+
+    .text-section{
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      .title {
+        margin-bottom: 36px;
+        padding: 0;
+      }
+
+      .article {
+        max-width: 100%;
+        padding: 0;
+        text-align: unset;
+      }
+    }
+  }
+
+  @media (max-width: $s-screen) {
+    //Same as outer-container paddings
+    margin: 0 -$s-x-padding-container;
+    padding-left: $s-x-padding-container;
+    padding-right: $s-x-padding-container;
+
+    .show-more {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  }
+}

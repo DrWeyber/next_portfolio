@@ -1,0 +1,133 @@
+@import "src/styles/variables.scss";
+@import "src/styles/common.scss";
+
+.mobile-menu {
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--light-background-color);
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: height 0.4s;
+  padding: 0 $m-x-padding-container 0;
+
+  &.menu-open {
+    height: calc(100dvh - $m-header-height);
+    top: $m-header-height;
+    padding-bottom: $m-x-padding-container;
+    bottom: 0;
+  }
+
+  .modal-nav {
+    flex-grow: 1;
+
+    ul {
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      li {
+        width: 100%;
+      }
+    }
+  }
+
+  .modal-nav-link {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 0;
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--base-font-color);
+  }
+
+  .contact-us {
+    font-size: 20px;
+    padding: 10px 20px;
+
+    span {
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: $s-screen) {
+    padding-left: $s-x-padding-container;
+    padding-right: $s-x-padding-container;
+
+    .modal-nav-link {
+      padding: 6px 0;
+      font-size: 20px;
+    }
+
+    .contact-us {
+      padding: 5px 15px;
+      font-size: 16px;
+    }
+
+    @media (min-height: 550px) {
+      .modal-nav-link {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.mobile-menu-sections {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .title-container {
+    margin-bottom: 42px;
+  }
+
+  @media (max-width: $s-screen) {
+    flex-direction: column;
+
+    .title-container {
+      margin-bottom: 12px;
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.mobile-menu-section {
+  &-1 {
+    width: 70%;
+
+    @media (max-width: $s-screen) {
+      width: 100%;
+    }
+  }
+
+  &-2 {
+    width: 30%;
+
+    @media (max-width: $s-screen) {
+      width: 100%;
+    }
+  }
+}
+
+.mobile-menu-locale-switcher {
+  display: block;
+
+  select {
+    width: 100%;
+
+    @media (max-width: $s-screen) {
+      margin-left: 0;
+    }
+  }
+}
